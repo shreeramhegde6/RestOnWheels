@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search bus</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" type="text/css" href="sbusstyle.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<body>
+  <style>
+    body{
+      background-image: url(https://images.unsplash.com/photo-1485809885770-fefe16c8f8fb?auto=format&fit=crop&w=754&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+    <div class="container">
+      <form action="busresults.php" method="post" name="search">
+   
+        <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button" disabled>From</button>
+            </span>
+            <input type="text" name="source" class="form-control" placeholder="Leaving from..." aria-label="Search for...">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="input-group">
+            <input type="text"  name="destination" class="form-control" placeholder="Destination..." aria-label="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button" disabled>To</button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="input-group">
+            <input type="date" id="txtdate" class="form-control" placeholder="Date" aria-label="Date">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button" disabled>Date</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <script language="javascript">
+      $(document).ready(function () {
+          $("#txtdate").datepicker({
+              minDate: 0
+          });
+      });
+</script>
+          
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <div class="input-group search-button">
+            <input type="submit" name="search" class="btn btn-primary btn-lg" value="Search">
+            
+            </div>
+          </div>
+        </div>
+      </form>
+      
+  </div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>

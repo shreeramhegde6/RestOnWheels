@@ -1,0 +1,93 @@
+<?php
+   session_start();
+  
+        
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rest On Wheels</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="busstyle.css">
+</head>
+<body>
+  <style > 
+    body{
+      font-size: 100%;
+    }
+   #heading{
+    color: white;
+     margin-left:35%;
+   }
+   #buttonHead{
+      margin-left:25%;
+   }
+  </style>
+<div>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand"  id="heading">Rest On Wheels</a>
+  
+  <form action="logout.php" method="post">
+      <button type="submit" class="btn btn-primary btn-lg" id="buttonHead">Sign Out</button>
+  </form>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="mybookings.php"> Welcome " <?php  echo $_SESSION['user_name'];?> "<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="searchbus.php">Bus Ticket</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="flightresults.php">Flight Ticket</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="trainresults.php">Train Ticket</a>
+      </li>
+      <li>
+        <p id="username"></p>
+      </li>
+    </ul>
+  </div>
+</nav>
+   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="http://awallpapersimages.com/wp-content/uploads/2016/07/Taj-Mahal-HD-Wallpaper-Night-Image.jpg" alt="First slide">
+    </div>
+   
+    <div class="carousel-item">
+      <img class="d-block w-100" src="http://www.telegraph.co.uk/content/dam/Travel/2017/July/Venice-II-travel-Getty-xlarge.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<h1>Carousel</h1>1
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

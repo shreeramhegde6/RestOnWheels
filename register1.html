@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+	
+	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ 	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ 	 <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<style type="text/css">
+		body{
+			background-image: url(https://pixabay.com/en/india-taj-mahal-agra-architecture-866692/);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+		}
+	</style>
+	<div class="header">
+		<h2>Rest On Wheels</h2>
+	</div>	
+	<form action="register.php" method="post">
+
+		<div class="input-group">
+			<label>First Name</label>
+			<input type="text" name="firstname">
+		</div>
+		<div class="input-group">
+			<label>Last Name</label>
+			<input type="text" name="lastname">
+		</div>
+		<div class="input-group">
+			<label>Username</label>
+			<input type="text" name="username">
+		</div>
+		<div class="input-group">
+			<label>Email</label>
+			<input type="email" name="email">
+		</div>
+		<div class="input-group">
+			<label>Password</label>
+			<input type="password" name="password">
+		</div>
+		<input type="submit" class="btn" name="reg_user">
+			
+		<p>
+			Already a member? <a href="./login.html">Sign in</a>
+		</p>
+	</form>
+</body>
+</html>
